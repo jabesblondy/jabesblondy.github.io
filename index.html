@@ -1,304 +1,276 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The official professional website of Jabes Blondy — Business enthusiast, student leader, techpreneur and Pan-Africanist.">
-    <title>Jabes Blondy | Professional Portfolio</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f8fa;
-            color: #182338;
-            line-height: 1.7;
-        }
-
-        header {
-            background: #101f38;
-            color: white;
-            padding: 22px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 22px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #c6a45b;
-        }
-
-        .hero {
-            min-height: 75vh;
-            padding: 100px 8%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: #101f38;
-            color: white;
-        }
-
-        .hero .intro {
-            color: #c6a45b;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 {
-            font-size: clamp(42px, 7vw, 76px);
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #c6a45b;
-        }
-
-        .hero p {
-            max-width: 650px;
-            color: #d5dbe5;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #c6a45b;
-            color: #101f38;
-            padding: 13px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            width: fit-content;
-        }
-
-        section {
-            padding: 75px 8%;
-        }
-
-        .section-title {
-            font-size: 30px;
-            margin-bottom: 25px;
-            color: #101f38;
-        }
-
-        .about p {
-            max-width: 850px;
-            color: #536074;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 7px;
-            border: 1px solid #e4e7ed;
-        }
-
-        .card h3 {
-            color: #101f38;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #647084;
-            font-size: 15px;
-        }
-
-        .contact {
-            background: #101f38;
-            color: white;
-        }
-
-        .contact .section-title {
-            color: white;
-        }
-
-        .contact p {
-            color: #d5dbe5;
-        }
-
-        .contact a {
-            color: #c6a45b;
-            text-decoration: none;
-        }
-
-        footer {
-            background: #0b172a;
-            color: #aab4c3;
-            padding: 25px 8%;
-            text-align: center;
-            font-size: 13px;
-        }
-
-        @media (max-width: 650px) {
-            header {
-                gap: 15px;
-            }
-
-            nav a {
-                margin: 0 12px 0 0;
-            }
-
-            .hero {
-                padding-top: 75px;
-                padding-bottom: 75px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jabes Blondy — Business & Enterprise | Techpreneur | Africapitalist | Pan-Africanist. Leadership, enterprise, innovation and Africa's future.">
+<meta name="theme-color" content="#101f38">
+<title>Jabes Blondy | Personal Portfolio</title>
+<style>
+:root{--navy:#101f38;--navy2:#172b49;--gold:#c6a45b;--gold2:#e1c987;--ink:#182338;--muted:#647084;--paper:#f7f8fa;--white:#fff;--line:#e5e8ee;--shadow:0 18px 55px rgba(16,31,56,.12);--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+img{max-width:100%;display:block}
+.container{width:min(1160px,90%);margin:auto}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(16,31,56,.96);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:800;letter-spacing:.04em;font-size:1.08rem}.brand span{color:var(--gold2)}
+.nav-links{display:flex;gap:23px;align-items:center}.nav-links a{font-size:.83rem;color:#e6eaf0;transition:.2s}.nav-links a:hover{color:var(--gold2)}
+.nav-cta{border:1px solid var(--gold);padding:9px 15px;border-radius:999px;color:var(--gold2)!important}
+.menu-toggle{display:none;background:none;border:1px solid #526078;color:#fff;border-radius:10px;padding:8px 11px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 25%,rgba(198,164,91,.18),transparent 27%),linear-gradient(125deg,#0c192e,#142844 70%,#101f38);color:#fff;min-height:630px;display:flex;align-items:center}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid rgba(225,201,135,.15);border-radius:50%;right:-150px;bottom:-260px;box-shadow:0 0 0 45px rgba(225,201,135,.025),0 0 0 90px rgba(225,201,135,.02)}
+.hero-inner{position:relative;z-index:1;padding:86px 0 94px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:54px;align-items:center}
+.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.22em;font-size:.73rem;font-weight:700}
+.hero h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.04;letter-spacing:-.055em;margin:22px 0 22px;max-width:900px}
+.hero h1 span{color:var(--gold2)}
+.hero-role{font-size:clamp(.95rem,2vw,1.16rem);font-weight:600;color:#f3f5f8;letter-spacing:.015em}
+.hero-tagline{color:#d9e0e9;max-width:660px;margin:18px 0 32px;font-size:1.05rem}
+.actions{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:9px;font-weight:700;font-size:.9rem;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-3px)}.btn-gold{background:var(--gold);color:#101f38}.btn-outline{border:1px solid rgba(255,255,255,.65);color:#fff}
+.hero-note{margin-top:38px;color:#aeb9c9;font-size:.78rem;letter-spacing:.04em}.hero-portrait-wrap{position:relative;justify-self:end;width:min(100%,390px)}.hero-portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 24%;border-radius:22px;border:5px solid rgba(255,255,255,.12);box-shadow:0 28px 75px rgba(0,0,0,.38);position:relative;z-index:1}.portrait-frame{position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(225,201,135,.55);border-radius:22px}.portrait-caption{position:absolute;z-index:2;left:-28px;bottom:22px;background:#fff;color:var(--navy);padding:13px 17px;border-radius:10px;box-shadow:var(--shadow);font-size:.78rem;font-weight:800;letter-spacing:.04em}
+section{padding:92px 0}
+.section-head{max-width:720px;margin-bottom:38px}
+.kicker{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#9a7938;font-weight:800}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;letter-spacing:-.04em;color:var(--navy);margin:10px 0 15px}
+.section-head p,.lead{color:var(--muted);font-size:1.02rem}
+.about-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:45px;align-items:start}
+.about-copy p{color:#59667a;margin-bottom:17px}
+.quote-card{background:var(--navy);color:#fff;padding:30px;border-radius:var(--radius);box-shadow:var(--shadow);position:sticky;top:105px}
+.quote-card .quote-mark{font-size:3rem;color:var(--gold);line-height:1}
+.quote-card p{font-size:1.25rem;line-height:1.45;font-weight:650}
+.quote-card small{display:block;color:#cbd3df;margin-top:20px}
+.value-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.value{padding:18px;background:#fff;border:1px solid var(--line);border-radius:13px}
+.value b{display:block;color:var(--navy);font-size:.9rem}.value span{color:var(--muted);font-size:.78rem}
+.navy-section{background:var(--navy);color:#fff}.navy-section h2{color:#fff}.navy-section .section-head p{color:#c5cedb}.navy-section .kicker{color:var(--gold2)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px;box-shadow:0 8px 28px rgba(16,31,56,.045);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .icon{width:42px;height:42px;border-radius:12px;background:#f5efdf;color:#8b6c2e;display:grid;place-items:center;font-size:1.15rem;margin-bottom:17px}
+.card h3{color:var(--navy);font-size:1.08rem;margin-bottom:9px}.card p{color:var(--muted);font-size:.9rem}
+.leadership-banner{background:linear-gradient(120deg,#172b49,#101f38);border-radius:22px;padding:34px;color:#fff;margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.leadership-banner h3{font-size:1.35rem}.leadership-banner p{color:#d1d9e4;max-width:680px;font-size:.9rem;margin-top:7px}
+.timeline{position:relative;max-width:850px;margin:10px auto 0;padding-left:28px}
+.timeline:before{content:"";position:absolute;left:6px;top:7px;bottom:7px;width:2px;background:#d8c18b}
+.timeline-item{position:relative;padding:0 0 32px 25px}
+.timeline-item:before{content:"";position:absolute;left:-28px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:3px solid #f7f8fa;box-shadow:0 0 0 2px var(--gold)}
+.timeline-item .date{font-size:.75rem;color:#9a7938;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.timeline-item h3{font-size:1.15rem;color:var(--navy);margin:5px 0}.timeline-item p{color:var(--muted);font-size:.91rem}
+.event-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.filter-btn{border:1px solid #d7dce5;background:#fff;color:#45536a;padding:8px 14px;border-radius:999px;font-size:.82rem}
+.filter-btn.active,.filter-btn:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.event-card{padding:0;overflow:hidden}.event-top{height:9px;background:linear-gradient(90deg,var(--gold),#ead8a8)}
+.event-body{padding:25px}.event-meta{color:#927337;font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.event-card h3{font-size:1.18rem;margin:9px 0}.event-body p{color:var(--muted);font-size:.88rem}
+.event-place{font-size:.8rem;color:#34445e;margin:13px 0;font-weight:650}
+.text-link{color:#8a6a2d;font-weight:800;font-size:.85rem;display:inline-block;margin-top:13px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project-card{background:#fff;border:1px solid var(--line);padding:27px;border-radius:var(--radius)}
+.project-card h3{color:var(--navy);margin:7px 0}.project-card p{color:var(--muted);font-size:.9rem}
+.project-label{color:#9a7938;text-transform:uppercase;font-size:.7rem;letter-spacing:.15em;font-weight:800}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#fff;border:1px solid #e0e4eb;color:#34445e;border-radius:999px;padding:9px 15px;font-size:.84rem}
+.gallery-intro{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:25px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery-tile{min-height:230px;border-radius:15px;background:linear-gradient(145deg,#e8ebf0,#d8dee8);border:1px solid #dce1e9;display:flex;align-items:flex-end;justify-content:flex-start;text-align:left;padding:14px;color:#58667b;overflow:hidden;position:relative}.gallery-tile img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .5s}.gallery-tile:hover img{transform:scale(1.06)}.gallery-tile span{position:relative;z-index:1;background:rgba(16,31,56,.88);color:#fff;padding:8px 12px;border-radius:8px;font-size:.78rem}
+.gallery-tile img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.gallery-tile span{position:relative;z-index:1;background:rgba(255,255,255,.88);padding:8px 12px;border-radius:8px;font-size:.8rem}
+.gallery-tile.has-image span{display:none}
+.upload-note{font-size:.83rem;color:var(--muted);margin-top:15px}
+.insight-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.insight-box p{color:var(--muted)}
+.contact-section{background:linear-gradient(120deg,#101f38,#172b49);color:#fff}
+.contact-section h2{color:#fff}.contact-section .section-head p{color:#c5cedb}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-card{border:1px solid rgba(255,255,255,.18);padding:25px;border-radius:15px;background:rgba(255,255,255,.05)}
+.contact-card p{color:#d4dce7;font-size:.9rem;margin:8px 0}.contact-card a{color:var(--gold2);font-weight:700}
+.quote-carousel{max-width:850px;margin:0 auto;background:linear-gradient(145deg,#1b3455,#12243d);border:1px solid rgba(225,201,135,.24);border-radius:22px;padding:clamp(26px,5vw,52px);box-shadow:0 20px 60px rgba(0,0,0,.2);min-height:310px}.quote-slide{display:none}.quote-slide.active{display:block;animation:quoteIn .45s ease}.quote-mark{font-size:4rem;line-height:.8;color:var(--gold2)}.quote-slide blockquote{font-size:clamp(1.35rem,3vw,2.15rem);line-height:1.4;color:#fff;font-weight:650;letter-spacing:-.025em;margin:15px 0 22px}.quote-attribution{color:var(--gold2);font-weight:800}.quote-attribution span{display:block;color:#c5cedb;font-size:.82rem;font-weight:400;margin-top:3px}.quote-slide>a{display:inline-block;color:#e5d4a8;font-size:.78rem;margin-top:17px;text-decoration:underline;text-underline-offset:3px}.quote-controls{display:flex;align-items:center;justify-content:space-between;margin-top:28px}.quote-controls>button{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;font-size:1.2rem}.quote-controls>button:hover{background:var(--gold);color:var(--navy)}.quote-dots{display:flex;gap:9px}.quote-dot{width:9px;height:9px;border:0;border-radius:50%;background:#65758b;padding:0}.quote-dot.active{background:var(--gold2);transform:scale(1.25)}@keyframes quoteIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.site-footer{background:#0a1527;color:#aeb9c9;padding:27px 0;font-size:.8rem}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.back-top{position:fixed;right:22px;bottom:22px;background:var(--gold);color:var(--navy);width:43px;height:43px;border:0;border-radius:50%;font-size:1.1rem;box-shadow:var(--shadow);z-index:20}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){.nav-links{gap:12px}.nav-links a{font-size:.75rem}.about-grid{grid-template-columns:1fr}.quote-card{position:static}.cards{grid-template-columns:repeat(2,1fr)}.value-strip{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.hero-inner{grid-template-columns:1fr;gap:34px;padding:70px 0}.hero-portrait-wrap{justify-self:start;width:min(78%,330px);margin:0 auto 12px}.portrait-caption{left:-12px}.nav-wrap{min-height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);padding:18px 5%;flex-direction:column;align-items:flex-start;border-top:1px solid #34445e}.nav-links.open{display:flex}.nav-links a{font-size:.92rem}.hero{min-height:570px}.hero-inner{padding:80px 0}.cards,.project-grid,.gallery-grid,.contact-grid{grid-template-columns:1fr}.value-strip{grid-template-columns:1fr 1fr}.leadership-banner,.gallery-intro{align-items:flex-start;flex-direction:column}section{padding:70px 0}}
+</style>
 </head>
-
 <body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home">JABES <span>BLONDY.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#leadership">Leadership</a><a href="#experience">Experience</a>
+      <a href="#events">Engagements</a><a href="#projects">Initiatives</a><a href="#gallery">Gallery</a><a href="#contact" class="nav-cta">Let's Connect</a>
+    </nav>
+  </div>
+</header>
 
-    <header>
-        <div class="logo">JABES BLONDY.</div>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">Personal Portfolio · Kenya · Africa</div>
+      <h1>Ideas Into Impact.<br><span>Leadership Into Legacy.</span></h1>
+      <div class="hero-role">Business &amp; Enterprise | Techpreneur | Africapitalist | Pan-Africanist</div>
+      <p class="hero-tagline">Empowering people. Advancing enterprise. Shaping Africa's place in global futures.</p>
+      <div class="actions"><a class="btn btn-gold" href="#experience">Explore My Work&nbsp; ↗</a><a class="btn btn-outline" href="#contact">Contact</a></div>
+      <div class="hero-note">LEADERSHIP&nbsp; · &nbsp;ENTERPRISE&nbsp; · &nbsp;INNOVATION&nbsp; · &nbsp;AFRICA'S FUTURE</div>
+    </div>
+    <div class="hero-portrait-wrap">
+      <div class="portrait-frame"></div>
+      <img class="hero-portrait" src="images/jabes-blondy.jpg" alt="Professional portrait of Jabes Blondy">
+      <div class="portrait-caption">JABES BLONDY · ENTREPRENEUR &amp; LEADER</div>
+    </div>
+  </div>
+</section>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#interests">Interests</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<section id="about">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">The person behind the work</div><h2>Purpose. Enterprise. Impact.</h2><p>Building ideas, institutions and opportunities that move Africa forward.</p></div>
+  <div class="about-grid">
+   <div class="about-copy reveal">
+    <p><strong>Jabes Blondy</strong> is a Kenyan entrepreneur, transformative leader and Pan-Africanist. He is the Founder of AYLA Africa, advancing youth leadership, innovation and enterprise across the continent.</p>
+    <p>Driven by Africapitalism, he believes in the power of entrepreneurship, technology and responsible leadership to unlock Africa's potential and create lasting impact.</p>
+   </div>
+   <aside class="quote-card reveal"><div class="quote-mark">“</div><p>Africa's greatest asset is its people. Empower them, equip them and create opportunities for them to lead.</p><small>Jabes Blondy · Personal philosophy</small></aside>
+  </div>
+  <div class="value-strip reveal">
+   <div class="value"><b>Enterprise</b><span>Turning ideas into opportunity.</span></div>
+   <div class="value"><b>Leadership</b><span>Building people and institutions.</span></div>
+   <div class="value"><b>Innovation</b><span>Championing solutions for tomorrow.</span></div>
+   <div class="value"><b>Pan-Africanism</b><span>Advancing a confident, connected Africa.</span></div>
+  </div>
+ </div>
+</section>
 
-    <main>
-        <section class="hero">
-            <div class="intro">Business · Leadership · Innovation</div>
+<section class="navy-section" id="leadership">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Leadership &amp; institutional contribution</div><h2>Building people. Strengthening institutions.</h2><p>Leadership is expressed through institution-building, strategic direction, collaboration and the ability to turn shared purpose into meaningful action.</p></div>
+  <div class="cards">
+   <article class="card reveal"><div class="icon">◎</div><h3>Founder · AYLA Africa</h3><p>Founded a youth-led Pan-African organisation focused on leadership development, digital empowerment, innovation and sustainable economic initiatives.</p></article>
+   <article class="card reveal"><div class="icon">↗</div><h3>Entrepreneurship &amp; Enterprise</h3><p>Advancing entrepreneurial thinking, enterprise development and initiatives that create opportunities and contribute to Africa's economic transformation.</p></article>
+   <article class="card reveal"><div class="icon">✦</div><h3>Partnerships &amp; Engagement</h3><p>Engagement with youth, enterprise and leadership networks, with an interest in institutional collaboration and shared initiatives.</p></article>
+  </div>
+  <div class="leadership-banner reveal"><div><h3>Leadership is a responsibility to create possibilities.</h3><p>My focus is on developing ideas, connecting people and supporting institutions and initiatives that expand opportunity.</p></div><a class="btn btn-gold" href="#contact">Explore Collaboration</a></div>
+ </div>
+</section>
 
-            <h1>Ideas Into Impact.<br>
-                <span>Leadership Into Legacy.</span>
-            </h1>
+<section id="experience">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Professional journey</div><h2>Experience &amp; engagements.</h2><p>A developing record of entrepreneurship, institution-building, organisational leadership, stakeholder engagement and professional contribution.</p></div>
+  <div class="timeline">
+   <article class="timeline-item reveal"><div class="date">October 2026 – Present</div><h3>Ambassador · Green Careers Caravan</h3><p>Jacob's Ladder Africa — engagement around green careers, sustainability, skills development and youth participation in emerging economic opportunities.</p></article>
+   <article class="timeline-item reveal"><div class="date">Founder &amp; Executive Leadership</div><h3>AYLA Africa</h3><p>Leading the development of a youth-led Pan-African organisation focused on leadership development, digital empowerment, innovation and sustainable economic initiatives.</p></article>
+   <article class="timeline-item reveal"><div class="date">Professional &amp; Community Engagement</div><h3>Leadership, Enterprise &amp; Collaboration</h3><p>Engaging with leadership networks, enterprise conversations and collaborative initiatives that support youth empowerment and Africa's development.</p></article>
+   <article class="timeline-item reveal"><div class="date">Earlier leadership experience</div><h3>Youth, community &amp; student initiatives</h3><p>Contributions to youth leadership, community engagement, organisational coordination and collaborative initiatives. Add exact roles and dates as you confirm each entry.</p></article>
+  </div>
+ </div>
+</section>
 
-            <p>
-                I am Jabes Blondy, a Bachelor of Commerce student,
-                emerging business professional, student leader and
-                technology enthusiast passionate about leadership,
-                enterprise and Africa's transformation.
-            </p>
+<section class="navy-section" id="events">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Conferences · Summits · Forums</div><h2>Ideas encountered. Networks expanded.</h2><p>Selected professional engagements and learning spaces that connect leadership, enterprise, innovation and Africa's development.</p></div>
+  <div class="event-tools" role="group" aria-label="Filter events">
+   <button class="filter-btn active" data-filter="all">All engagements</button><button class="filter-btn" data-filter="leadership">Leadership</button><button class="filter-btn" data-filter="enterprise">Enterprise &amp; economics</button>
+  </div>
+  <div class="cards" id="eventGrid">
+   <article class="card event-card reveal" data-category="leadership"><div class="event-top"></div><div class="event-body"><div class="event-meta">6 November 2026 · Leadership Summit</div><h3>Reformation Community Leadership Summit (RCLS '26)</h3><div class="event-place">United States International University-Africa · Nairobi</div><p>A Pan-African leadership summit convening emerging leaders around the theme “Implementing the Africa We Want: Youth as Architects of Sustainable Development.” The programme featured leadership conversations, development-focused panels, practical solution labs and youth enterprise engagement.</p><p style="margin-top:10px"><strong>Professional focus:</strong> Youth leadership, sustainable development, collaboration and African-led solutions.</p><a class="text-link" href="https://stayhappening.com/e/reformation-community-leadership-summit-2026-E118SB1MIAE3T" target="_blank" rel="noopener">Event information ↗</a></div></article>
+   <article class="card event-card reveal" data-category="enterprise"><div class="event-top"></div><div class="event-body"><div class="event-meta">30 October 2026 · Regional Conference</div><h3>East Africa Regional Conference (EARC 2026)</h3><div class="event-place">Technical University of Kenya · Nairobi</div><p>Organised by Students For Liberty's East African teams, the conference brought together students, young leaders and entrepreneurs for regional conversations on economic freedom, trade, enterprise and participation in regional markets.</p><p style="margin-top:10px"><strong>Professional focus:</strong> Enterprise, economic thinking, regional cooperation and networking.</p><a class="text-link" href="https://www.kilimocorps.org/events/east-africa-regional-conference-2026" target="_blank" rel="noopener">Conference information ↗</a></div></article>
+   <article class="card event-card reveal" data-category="leadership"><div class="event-top"></div><div class="event-body"><div class="event-meta">Add date · Professional engagement</div><h3>More engagements coming soon</h3><div class="event-place">Your next conference, forum or summit</div><p>This portfolio is designed to grow. Add other events, roundtables, workshops, policy forums and professional networking engagements as they happen.</p><p style="margin-top:10px"><strong>Tip:</strong> Include the event's name, organiser, venue, date and your actual role.</p></div></article>
+  </div>
+ </div>
+</section>
 
-            <a href="#about" class="button">Discover My Journey</a>
-        </section>
+<section id="projects">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Initiatives &amp; areas of contribution</div><h2>Ideas translated into initiatives.</h2><p>A portfolio of institutions, projects and areas of work connected to enterprise, innovation and community advancement.</p></div>
+  <div class="project-grid">
+   <article class="project-card reveal"><div class="project-label">Institution building · Founder</div><h3>AYLA Africa</h3><p>A youth-led Pan-African organisation empowering emerging leaders, entrepreneurs, innovators and changemakers through leadership development, digital empowerment, innovation and sustainable economic initiatives.</p><a class="text-link" href="#contact">Discuss partnerships ↗</a></article>
+   <article class="project-card reveal"><div class="project-label">Knowledge &amp; community</div><h3>Reader's Guild</h3><p>A reading community initiative encouraging intellectual growth, shared learning, thoughtful discussion and a culture of reading.</p></article>
+   <article class="project-card reveal"><div class="project-label">Digital services · Concept</div><h3>AYLA E-Service Hub</h3><p>A digital services concept exploring accessible support for online applications, business services, document preparation and digital solutions. Update this entry as the initiative develops.</p></article>
+   <article class="project-card reveal"><div class="project-label">Innovation · Challenge participation</div><h3>SunDry Hub</h3><p>An innovation challenge concept developed through participation in the Green Careers Caravan ecosystem. Add a project summary, progress, evidence and outcomes when ready.</p></article>
+  </div>
+ </div>
+</section>
 
-        <section class="about" id="about">
-            <h2 class="section-title">About Me</h2>
+<section class="navy-section" id="interests">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Knowledge &amp; competencies</div><h2>Areas of interest and capability.</h2><p>Professional interests and developing competencies that inform my work and collaborations.</p></div>
+  <div class="skills reveal">
+   <span class="skill">Business Strategy</span><span class="skill">Enterprise Development</span><span class="skill">Organisational Development</span><span class="skill">Strategic Planning</span><span class="skill">Leadership &amp; Governance</span><span class="skill">Stakeholder Engagement</span><span class="skill">Partnership Development</span><span class="skill">Team Coordination</span><span class="skill">Project Coordination</span><span class="skill">Communication</span><span class="skill">Research &amp; Reporting</span><span class="skill">Microsoft Office</span><span class="skill">Canva</span><span class="skill">Google Workspace</span><span class="skill">Digital Empowerment</span><span class="skill">Technology &amp; Innovation</span>
+  </div>
+ </div>
+</section>
 
-            <p>
-                I am a business enthusiast with a growing interest in
-                business strategy, organisational development,
-                entrepreneurship and technology. I believe in the
-                power of ideas, purposeful leadership and innovation
-                to create meaningful and sustainable impact.
-                My journey is driven by service, integrity,
-                continuous learning and a commitment to contributing
-                to Africa's development.
-            </p>
-        </section>
+<section id="gallery">
+ <div class="container">
+  <div class="gallery-intro"><div class="section-head reveal" style="margin-bottom:0"><div class="kicker">Visual record</div><h2>Moments from the journey.</h2><p>Professional portraits, conferences, collaborations and project documentation.</p></div><a class="btn btn-gold" href="#contact">Share an opportunity</a></div>
+  <div class="gallery-grid">
+   <div class="gallery-tile"><img src="images/jabes-blondy.jpg" alt="Jabes Blondy professional portrait"><span>Jabes Blondy · Professional portrait</span></div>
+   <div class="gallery-tile"><img src="https://images.pexels.com/photos/3869649/pexels-photo-3869649.jpeg" alt="African professionals collaborating in a meeting"><span>Leadership &amp; collaboration · Illustrative</span></div>
+   <div class="gallery-tile"><img src="https://images.pexels.com/photos/5324960/pexels-photo-5324960.jpeg" alt="Professionals collaborating around a table"><span>Strategy &amp; teamwork · Illustrative</span></div>
+   <div class="gallery-tile"><img src="https://images.pexels.com/photos/8761637/pexels-photo-8761637.jpeg" alt="Professionals networking at a conference"><span>Professional networking · Illustrative</span></div>
+  </div>
+  <p class="upload-note">The three professional scene photographs are illustrative stock images from Pexels, not photographs of Jabes or of the named events. Replace them with your own RCLS26, EARC2026 and project photographs as you upload them. Photo credits: <a href="https://www.pexels.com/photo/office-team-having-a-meeting-3869649/" target="_blank" rel="noopener">Picha Stock</a>, <a href="https://www.pexels.com/photo/diverse-businesspeople-talking-in-modern-conference-hall-5324960/" target="_blank" rel="noopener">Anna Shvets</a> and <a href="https://www.pexels.com/photo/people-in-corporate-wear-having-a-discussion-8761637/" target="_blank" rel="noopener">Pavel Danilyuk</a> via Pexels.</p>
+  <p class="upload-note">Gallery images are added by uploading files to the repository's <strong>images</strong> folder and updating the matching image paths. The placeholders above will be replaced with your photographs.</p>
+ </div>
+</section>
 
-        <section id="experience">
-            <h2 class="section-title">Leadership & Experience</h2>
 
-            <div class="cards">
-                <div class="card">
-                    <h3>Student Leadership</h3>
-                    <p>
-                        Head of Class Representatives,
-                        School of Business, Kenyatta University.
-                    </p>
-                </div>
+<section class="navy-section" id="perspectives">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Ideas that shape action</div><h2>Perspectives worth carrying forward.</h2><p>Selected words from African business and civic leaders whose work speaks to enterprise, responsibility and lasting impact.</p></div>
+  <div class="quote-carousel reveal" aria-live="polite">
+   <div class="quote-slide active" data-quote="0"><div class="quote-mark">“</div><blockquote>There is a better way to invest in Africa for a sustainable future that creates value for all.</blockquote><div class="quote-attribution">Tony O. Elumelu <span>· Investor, entrepreneur &amp; philanthropist</span></div><a href="https://www.tonyelumelufoundation.org/articles/58-quotes-tony-elumelu-africas-most-prominent-philanthropist" target="_blank" rel="noopener">Source: Tony Elumelu Foundation ↗</a></div>
+   <div class="quote-slide" data-quote="1"><div class="quote-mark">“</div><blockquote>The private sector must be involved in the business of development.</blockquote><div class="quote-attribution">Tony O. Elumelu <span>· Investor, entrepreneur &amp; philanthropist</span></div><a href="https://www.tonyelumelufoundation.org/africapitalism" target="_blank" rel="noopener">Source: Tony Elumelu Foundation — Africapitalism ↗</a></div>
+   <div class="quote-slide" data-quote="2"><div class="quote-mark">“</div><blockquote>It's the little things citizens do. That's what will make the difference. My little thing is planting trees.</blockquote><div class="quote-attribution">Wangari Maathai <span>· Kenyan environmentalist &amp; Nobel Peace Laureate</span></div><a href="https://unon.org/en/content/international-womens-day-2016" target="_blank" rel="noopener">Source: United Nations Office at Nairobi ↗</a></div>
+   <div class="quote-controls"><button type="button" id="quotePrev" aria-label="Previous quotation">←</button><div class="quote-dots"><button type="button" class="quote-dot active" data-go="0" aria-label="Show quote 1"></button><button type="button" class="quote-dot" data-go="1" aria-label="Show quote 2"></button><button type="button" class="quote-dot" data-go="2" aria-label="Show quote 3"></button></div><button type="button" id="quoteNext" aria-label="Next quotation">→</button></div>
+  </div>
+ </div>
+</section>
+<section>
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Insights &amp; publications</div><h2>Ideas worth sharing.</h2><p>A space for articles, reflections, speeches, interviews, statements and perspectives on leadership, enterprise and Africa's future.</p></div>
+  <div class="insight-box reveal"><p><strong>Coming into focus:</strong> This section can feature your published articles, LinkedIn essays, event reflections, policy perspectives, interviews and speaking contributions. We will add each item with a title, date, short summary and link to the original publication.</p></div>
+ </div>
+</section>
 
-                <div class="card">
-                    <h3>Youth Leadership</h3>
-                    <p>
-                        Executive leadership and youth empowerment
-                        initiatives focused on developing African
-                        leaders and changemakers.
-                    </p>
-                </div>
+<section class="contact-section" id="contact">
+ <div class="container">
+  <div class="section-head reveal"><div class="kicker">Connect · Collaborate · Create impact</div><h2>Let's build what comes next.</h2><p>I welcome meaningful conversations, strategic collaborations and opportunities to advance enterprise, leadership, innovation and Africa's development.</p></div>
+  <div class="contact-grid">
+   <div class="contact-card reveal"><h3>Professional enquiries</h3><p>For partnerships, speaking engagements, projects and professional opportunities.</p><p>Email: <a href="mailto:jabesblondy@gmail.com">jabesblondy@gmail.com</a></p><p>Phone: <a href="tel:+254795344692">+254 795 344692</a></p><p>WhatsApp: <a href="https://wa.me/254795344692" target="_blank" rel="noopener">Message me on WhatsApp ↗</a></p><p>Location: Kenya · Open to regional and international collaboration</p></div>
+   <div class="contact-card reveal"><h3>Let's connect professionally</h3><p>Find me on professional and social platforms. Add your verified profile links before publishing.</p><p><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn profile ↗</a></p><p><a href="mailto:jabesblondy@gmail.com">Send an email ↗</a></p></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><span>© <span id="year"></span> Jabes Blondy. All rights reserved.</span><span>Business &amp; Enterprise · Techpreneur · Africapitalist · Pan-Africanist</span></div></footer>
+<button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'✕':'☰'});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const filter=btn.dataset.filter;document.querySelectorAll('.event-card').forEach(card=>{card.style.display=filter==='all'||card.dataset.category===filter?'block':'none'})}));
+document.getElementById('backTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const quoteSlides=[...document.querySelectorAll('.quote-slide')];
+const quoteDots=[...document.querySelectorAll('.quote-dot')];
+let quoteIndex=0;
+function showQuote(next){quoteIndex=(next+quoteSlides.length)%quoteSlides.length;quoteSlides.forEach((s,i)=>s.classList.toggle('active',i===quoteIndex));quoteDots.forEach((d,i)=>d.classList.toggle('active',i===quoteIndex))}
+document.getElementById('quotePrev').addEventListener('click',()=>showQuote(quoteIndex-1));
+document.getElementById('quoteNext').addEventListener('click',()=>showQuote(quoteIndex+1));
+quoteDots.forEach(dot=>dot.addEventListener('click',()=>showQuote(Number(dot.dataset.go))));
 
-                <div class="card">
-                    <h3>Professional Development</h3>
-                    <p>
-                        Building capabilities in business,
-                        technology, communication and organisational
-                        leadership.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="interests">
-            <h2 class="section-title">Areas of Interest</h2>
-
-            <div class="cards">
-                <div class="card">
-                    <h3>Business & Enterprise</h3>
-                    <p>Business strategy, entrepreneurship and economic transformation.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Technology & Innovation</h3>
-                    <p>Digital transformation, technology and innovative solutions.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Leadership & Governance</h3>
-                    <p>Leadership development, institutional growth and good governance.</p>
-                </div>
-
-                <div class="card">
-                    <h3>Africa's Development</h3>
-                    <p>Pan-African cooperation, sustainable development and human progress.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2 class="section-title">Let's Connect</h2>
-
-            <p>
-                I welcome meaningful conversations, professional
-                collaborations and opportunities to learn and grow.
-            </p>
-
-            <p style="margin-top: 20px;">
-                Email:
-                <a href="mailto:jabesblondy@gmail.com">
-                    jabesblondy@gmail.com
-                </a>
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        © 2026 Jabes Blondy. All Rights Reserved.
-    </footer>
-
+</script>
 </body>
 </html>
